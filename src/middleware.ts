@@ -60,11 +60,6 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
      */
-    "/((?!api|_next/static|_next/image|assets|favicon.ico|sitemap.xml|robots.txt).*)",
-    /*
-     * Match all request paths except for the ones starting with:
-     * - .swa (Azure static web apps)
-     */
-    "/((?!.swa).*)",
+    "/((?!api|_next/static|_next/image|assets|favicon.ico|sitemap.xml|robots.txt|.swa).*)",
   ],
 };
